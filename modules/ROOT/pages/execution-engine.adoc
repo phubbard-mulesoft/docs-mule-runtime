@@ -7,9 +7,9 @@ endif::[]
 Mule runtime engine implements a reactive execution engine, tuned for nonblocking and asynchronous execution. +
 To see more details about reactive programming, visit https://en.wikipedia.org/wiki/Reactive_programming.
 
-This task-oriented execution model enables you to take advantage of nonblocking I/O at high concurrency levels transparently, meaning you don’t need to account for threading or asynchronicity in your flows. Each operation inside a Mule flow is a task that provides metadata about its execution, and Mule makes tuning decisions based on that metadata.
+This task-oriented execution model enables you to take advantage of nonblocking I/O at high concurrency levels transparently, meaning you don’t need to account for threading or asynchronicity in your flows. Each operation inside a Mule flow has a task that provides metadata about its execution, and Mule makes tuning decisions based on that metadata.
 
-Mule event processors indicate to Mule whether they are CPU-intensive, CPU-light, or I/O-intensive operations. These workload types help Mule tune for different workloads, so you don’t need to manage thread pools manually to achieve optimum performance. Instead, Mule introspects the available resources (such as memory and CPU cores) in the system to tune thread pools automatically.
+Mule event processors indicate to Mule whether they are CPU-intensive, CPU-light, or I/O-intensive operations. These workload types help Mule tune for different workloads, so you don’t need to manage thread pools manually to achieve optimum performance. Instead, Mule inspects the available resources (such as memory and CPU cores) in the system to tune thread pools automatically.
 
 [[processing_types]]
 == Processing Types
